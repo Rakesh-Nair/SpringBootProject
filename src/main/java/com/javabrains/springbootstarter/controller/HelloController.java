@@ -5,7 +5,9 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.javabrains.springbootstarter.beans.Student;
@@ -29,4 +31,13 @@ public class HelloController {
 		return studentService.getStudent(id);
 	}
 
+	@RequestMapping(method=RequestMethod.POST,value="/Students")
+	public void addStudent(@RequestBody Student student){
+		studentService.addStudent(student);
+	}
+	
+	@RequestMapping(method=RequestMethod.PUT,value="/Students/{id}")
+	public void updateStudent(@RequestBody Student student,@PathVariable String id){
+		studentService.updateStudent(student,id);
+	}
 }

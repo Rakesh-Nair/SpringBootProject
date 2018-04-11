@@ -1,7 +1,12 @@
 package com.javabrains.springbootstarter.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity
 public class Student {
 	
+	@Id
 	private String id;
 	private String name;
 	private String project;

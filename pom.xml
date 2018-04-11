@@ -17,6 +17,26 @@
     	<artifactId>spring-boot-starter-web</artifactId>
     	<version>1.5.11.RELEASE</version><!--$NO-MVN-MAN-VER$-->
 	</dependency>
+	
+	<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-data-jpa</artifactId>
+    	<version>1.5.11.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.apache.derby</groupId>
+    	<artifactId>derby</artifactId>
+    	<scope>runtime</scope><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+	
+	<dependency>
+    	<groupId>org.springframework.boot</groupId>
+    	<artifactId>spring-boot-starter-test</artifactId>
+    	<version>1.5.11.RELEASE</version><!--$NO-MVN-MAN-VER$-->
+	</dependency>
+	
+	
 
   </dependencies>
   

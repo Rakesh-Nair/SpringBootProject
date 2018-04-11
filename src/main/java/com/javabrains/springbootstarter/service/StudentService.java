@@ -43,10 +43,17 @@ public class StudentService {
 			Student s = studentList.get(i);
 			
 			if(s.getId().equals(id)){
-				studentList.set(i,s);
+				studentList.set(i,student);
 				return;
 			}
 		}
+		
+	}
+
+	public void deleteStudent(String id) {
+		// TODO Auto-generated method stub
+		
+		studentList.removeIf(t->t.getId().equals(id));
 		
 	}
 

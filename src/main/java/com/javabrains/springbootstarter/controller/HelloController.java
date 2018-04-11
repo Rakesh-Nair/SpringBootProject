@@ -40,4 +40,9 @@ public class HelloController {
 	public void updateStudent(@RequestBody Student student,@PathVariable String id){
 		studentService.updateStudent(student,id);
 	}
+	
+	@RequestMapping(method=RequestMethod.DELETE,value="/Students/{id}")
+	public void deleteStudent(@PathVariable String id){
+		studentService.deleteStudent(id);
+	}
 }
